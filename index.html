@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Golden House — локации и цены</title>
+<meta name="description" content="Мини-презентация: жилые комплексы Golden House (gh.uz) — локации, ключевые особенности и условия покупки." />
+<style>
+  :root{
+    --bg:#0d0e10;
+    --panel:#15171c;
+    --panel-2:#1c1f26;
+    --text:#f1eee6;
+    --muted:#a59f90;
+    --gold:#c9a35a;
+    --gold-2:#e2c279;
+    --line:rgba(201,163,90,.25);
+    --radius:14px;
+    --shadow:0 10px 40px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--gold-2);text-decoration:none}
+  a:hover{color:var(--gold)}
+  .container{max-width:1180px;margin:0 auto;padding:0 22px}
+
+  /* HERO */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(1000px 500px at 80% -10%,rgba(201,163,90,.18),transparent 60%),
+      radial-gradient(700px 400px at -10% 110%,rgba(201,163,90,.12),transparent 60%),
+      linear-gradient(180deg,#0b0c0e 0%,#0d0e10 100%);
+    border-bottom:1px solid var(--line);
+    padding:64px 0 56px;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:42px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.5px}
+  .brand-mark{
+    width:36px;height:36px;border-radius:8px;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));
+    display:grid;place-items:center;color:#1a1408;font-weight:900;
+    box-shadow:0 6px 18px rgba(201,163,90,.35);
+  }
+  .nav a.cta{
+    border:1px solid var(--gold);color:var(--gold-2);
+    padding:9px 16px;border-radius:999px;font-size:14px;
+    transition:.2s;
+  }
+  .nav a.cta:hover{background:var(--gold);color:#1a1408}
+  .hero h1{
+    font-size:clamp(34px,5vw,58px);line-height:1.05;margin:0 0 18px;font-weight:800;letter-spacing:-.02em;
+  }
+  .hero h1 span{
+    background:linear-gradient(90deg,var(--gold-2),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{
+    color:var(--muted);font-size:18px;max-width:720px;margin:0 0 26px;line-height:1.55;
+  }
+  .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:30px}
+  .stat{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 18px;
+  }
+  .stat b{display:block;font-size:24px;color:var(--gold-2);margin-bottom:4px}
+  .stat span{color:var(--muted);font-size:13px}
+  @media (max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  /* SECTION */
+  section{padding:72px 0}
+  .section-title{
+    display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:28px;
+  }
+  .section-title h2{margin:0;font-size:clamp(24px,3vw,34px);letter-spacing:-.01em}
+  .section-title p{margin:0;color:var(--muted);max-width:520px}
+  .kicker{
+    display:inline-block;color:var(--gold-2);font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;margin-bottom:8px;
+  }
+
+  /* CARDS */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{
+    background:linear-gradient(180deg,var(--panel) 0%,var(--panel-2) 100%);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;display:flex;flex-direction:column;gap:14px;
+    transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    position:relative;overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(400px 120px at 100% 0%,rgba(201,163,90,.12),transparent 60%);
+    pointer-events:none;
+  }
+  .card:hover{transform:translateY(-3px);border-color:rgba(201,163,90,.6);box-shadow:var(--shadow)}
+  .badge{
+    display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold-2);border:1px solid var(--line);padding:4px 10px;border-radius:999px;width:fit-content;
+  }
+  .badge.flag{background:rgba(201,163,90,.12);border-color:rgba(201,163,90,.5)}
+  .card h3{margin:2px 0 0;font-size:22px;letter-spacing:-.01em}
+  .card .loc{color:var(--muted);font-size:14px;line-height:1.5}
+  .card ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+  .card ul li{font-size:14px;color:#dcd5c3;display:flex;gap:8px;align-items:flex-start}
+  .card ul li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:8px;flex:0 0 auto}
+  .price{
+    margin-top:auto;border-top:1px dashed var(--line);padding-top:14px;
+    display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  }
+  .price .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.14em}
+  .price .value{font-size:18px;font-weight:700;color:var(--gold-2)}
+  .price .value small{font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.04em}
+
+  /* TERMS */
+  .terms{
+    background:linear-gradient(180deg,#101218 0%,#0d0e10 100%);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .terms-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media (max-width:880px){.terms-grid{grid-template-columns:repeat(2,1fr)}}
+  .term{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+  }
+  .term b{display:block;font-size:28px;color:var(--gold-2);margin-bottom:6px}
+  .term span{color:var(--muted);font-size:14px;line-height:1.5}
+
+  /* CTA */
+  .cta-box{
+    background:
+      radial-gradient(800px 300px at 100% 0%,rgba(201,163,90,.18),transparent 60%),
+      linear-gradient(180deg,#15171c,#101218);
+    border:1px solid var(--line);border-radius:18px;padding:36px;display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;
+  }
+  @media (max-width:780px){.cta-box{grid-template-columns:1fr}}
+  .cta-box h3{margin:0 0 8px;font-size:26px;letter-spacing:-.01em}
+  .cta-box p{margin:0;color:var(--muted)}
+  .cta-actions{display:flex;flex-direction:column;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:14px 18px;border-radius:12px;font-weight:600;letter-spacing:.01em;
+    transition:.2s;border:1px solid transparent;
+  }
+  .btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1408}
+  .btn-gold:hover{filter:brightness(1.08)}
+  .btn-ghost{border-color:var(--line);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
+
+  /* FOOTER */
+  footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .disc{max-width:760px;font-size:12px;line-height:1.55;margin-top:14px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="brand-mark">GH</div>
+        <span>Golden House</span>
+      </div>
+      <a href="tel:+998781501111" class="cta">+998 78 150-11-11</a>
+    </div>
+
+    <span class="kicker">Жилые комплексы Ташкента · обзор по данным gh.uz</span>
+    <h1>Локации и цены <span>Golden House</span></h1>
+    <p class="lead">
+      Группа компаний Golden House формирует облик столицы — от премиальных клубных домов
+      до эко-кварталов в зелёных районах Ташкента. Ниже — сводка по действующим
+      жилым комплексам, их расположение и ключевые условия покупки.
+    </p>
+
+    <div class="stats">
+      <div class="stat"><b>9</b><span>жилых комплексов</span></div>
+      <div class="stat"><b>от 15%</b><span>первоначальный взнос</span></div>
+      <div class="stat"><b>20%</b><span>ставка по ипотеке</span></div>
+      <div class="stat"><b>от 6,3 млн</b><span>сум / месяц</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <span class="kicker">Локации</span>
+        <h2>Жилые комплексы</h2>
+      </div>
+      <p>Каждый проект — это полноценный квартал с собственной инфраструктурой, благоустройством и социальными объектами.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <span class="badge flag">Premium · Клубный дом</span>
+        <h3>INFINITY Luxury Residence</h3>
+        <div class="loc">Яшнабадский р-н, 5-й пр-д Садыка Азимова. В сердце столицы, шаговая доступность к ресторанам и бизнес-центрам.</div>
+        <ul>
+          <li>5 этажей, всего 35 эксклюзивных квартир</li>
+          <li>Площади от 117 м², террасы и палисадники</li>
+          <li>Закрытый приватный двор и буферная зона</li>
+        </ul>
+        <div class="price">
+          <span class="label">Сегмент</span>
+          <span class="value">Premium <small>цена по запросу</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Бизнес-класс</span>
+        <h3>O'Z Zamin</h3>
+        <div class="loc">На трассе «Фергана йули», 10 минут до центра. Развитая транспортная сеть и общественный транспорт.</div>
+        <ul>
+          <li>Современная школа на территории комплекса</li>
+          <li>Близость к рынкам Рисовый и Авиасозлар</li>
+          <li>Коммерческие помещения на первых этажах</li>
+        </ul>
+        <div class="price">
+          <span class="label">Условия</span>
+          <span class="value">Ипотека 20% <small>от 6,3 млн сум/мес</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge flag">Флагманский проект</span>
+        <h3>O'Z Mahal</h3>
+        <div class="loc">Флагманский квартал Golden House. В 2025 г. состоялась торжественная передача ключей дольщикам.</div>
+        <ul>
+          <li>Заселённые секции, готовая инфраструктура</li>
+          <li>Безопасный двор без машин</li>
+          <li>Комплексное благоустройство территории</li>
+        </ul>
+        <div class="price">
+          <span class="label">Статус</span>
+          <span class="value">Сдан <small>часть очередей</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Семейный квартал</span>
+        <h3>O'Z Makon</h3>
+        <div class="loc">Рядом с парком «Ашхабад» (12 га, колесо обозрения, дельфинарий). Тихий зелёный квартал.</div>
+        <ul>
+          <li>Частный детский сад на территории</li>
+          <li>Fitness room и Kids room</li>
+          <li>Видеонаблюдение 24/7, IP-домофоны</li>
+        </ul>
+        <div class="price">
+          <span class="label">Условия</span>
+          <span class="value">Ипотека 20% <small>от 6,3 млн сум/мес</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Эко-квартал</span>
+        <h3>Assalom Bog'lar</h3>
+        <div class="loc">Яшнабадский р-н, рядом с Ташкентским Ботаническим садом. 5 минут до зелёной зоны.</div>
+        <ul>
+          <li>Ремонт в подарок, отделка от застройщика</li>
+          <li>Многолетние деревья во дворе</li>
+          <li>ТЦ Anor Plaza, Ecobozor, Sampi рядом</li>
+        </ul>
+        <div class="price">
+          <span class="label">Ежемесячно</span>
+          <span class="value">от 6 300 000 сум <small>· ставка 20%</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Эко-квартал</span>
+        <h3>Assalom Jomiy</h3>
+        <div class="loc">На круге Джами. Рынок Джами — 4 минуты пешком. Зелёные сады во дворах ЖК.</div>
+        <ul>
+          <li>Первоначальный взнос от 15%</li>
+          <li>Отделка в подарок</li>
+          <li>Близко: Аквапарк, Ташкентлэнд</li>
+        </ul>
+        <div class="price">
+          <span class="label">Ежемесячно</span>
+          <span class="value">от 6 300 000 сум <small>· взнос 15%</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Жилой район</span>
+        <h3>Assalom Sohil</h3>
+        <div class="loc">М. «Тошкент» — 10 минут на авто, парк Фуркат — 10 минут пешком. Собственная набережная.</div>
+        <ul>
+          <li>Сданы и заселены 2-я и 3-я линии</li>
+          <li>Авторская трёхслойная технология стен</li>
+          <li>Детский сад и школа на территории</li>
+        </ul>
+        <div class="price">
+          <span class="label">Ежемесячно</span>
+          <span class="value">от 6 300 000 сум <small>· взнос 15%</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">3 очереди</span>
+        <h3>Assalom Havo</h3>
+        <div class="loc">Яшнабадский р-н. М. «Алмас» — 5 минут пешком, рынок «Авиасозлар» — 5 минут пешком.</div>
+        <ul>
+          <li>1-я очередь сдана (8 × 5-эт. домов)</li>
+          <li>2-я очередь: 5 × 9-эт. домов в стройке</li>
+          <li>3-я очередь: 4 × 16-эт. домов в стройке</li>
+        </ul>
+        <div class="price">
+          <span class="label">Ежемесячно</span>
+          <span class="value">от 6 300 000 сум <small>· взнос 15%</small></span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Коммерция</span>
+        <h3>Business</h3>
+        <div class="loc">Коммерческая недвижимость Golden House: офисы и помещения формата street-retail на первых этажах ЖК.</div>
+        <ul>
+          <li>Готовые помещения и под отделку</li>
+          <li>Высокий пешеходный и автомобильный трафик</li>
+          <li>Гибкие планировки от 30 м²</li>
+        </ul>
+        <div class="price">
+          <span class="label">Цена</span>
+          <span class="value">по запросу <small>· отдел коммерции</small></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="terms">
+  <div class="container">
+    <div class="section-title">
+      <div>
+        <span class="kicker">Условия покупки</span>
+        <h2>Ипотека на этапе строительства</h2>
+      </div>
+      <p>Единые условия по эко-кварталам Assalom и проектам O'Z. Окончательную сумму и скидки уточняйте в отделе продаж.</p>
+    </div>
+
+    <div class="terms-grid">
+      <div class="term"><b>от 15%</b><span>Первоначальный взнос</span></div>
+      <div class="term"><b>20%</b><span>Процентная ставка</span></div>
+      <div class="term"><b>от 6 300 000</b><span>Сум — ежемесячный платёж</span></div>
+      <div class="term"><b>В подарок</b><span>Отделка / ремонт квартиры</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <span class="kicker">Контакты</span>
+        <h3>Офис продаж Golden House</h3>
+        <p>Яшнабадский район, 5-й проезд Садыка Азимова, бизнес-центр «Infinity».<br/>
+        Отдел продаж: Пн–Вс, 9:00–19:00.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-gold" href="tel:+998781501111">📞 +998 78 150-11-11</a>
+        <a class="btn btn-ghost" href="https://gh.uz" target="_blank" rel="noopener">Открыть gh.uz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <span>© Golden House Development · мини-презентация по открытым данным gh.uz</span>
+      <span>Дата сборки: 2026-04-28</span>
+    </div>
+    <p class="disc">
+      * Стоимость со скидкой указана при 100% оплате. Ежемесячный платёж приведён для системы
+      «ипотека на этапе строительства» и не является окончательной суммой. Точные цены и условия
+      уточняйте в отделе продаж по телефону +998 78 150-11-11. Предложение не является публичной
+      офертой.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
